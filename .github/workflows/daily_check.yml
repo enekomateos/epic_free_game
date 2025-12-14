@@ -27,3 +27,11 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           python main.py
+
+      - name: Commit and push updated games list
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add previous_games.txt
+          git diff --quiet --cached || git commit -m "Update previous games list"
+          git push

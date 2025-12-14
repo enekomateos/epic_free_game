@@ -43,7 +43,7 @@ if free_games:
         "content": message_content
     }
 
-    with open("previous_games.txt", "w") as f:
+    with open("previous_games.txt", "a") as f:
         for title, _ in free_games:
             f.write(f"{title}\n")
 
