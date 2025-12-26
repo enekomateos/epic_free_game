@@ -2,8 +2,11 @@ name: Daily Epic Free Games Check
 
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run-check:
