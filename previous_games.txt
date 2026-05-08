@@ -50,3 +50,5 @@ Prop Sumo
 DOOMBLADE
 Firestone Online Idle RPG
 Oddsparks: An Automation Adventure
+Arranger: A Role-Puzzling Adventure
+Trash Goblin
